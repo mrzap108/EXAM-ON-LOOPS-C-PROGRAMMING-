@@ -4,8 +4,8 @@
 void main()
 {
     //number1();
-    //number2();
-    number3();
+    number2();
+    //number3();
 
 }
 
@@ -49,11 +49,11 @@ void number2()
     printf("Enter a character: ");
     for(;;)
     {
-        input = getchar();
+        input = getche();
         if(input == '.')
         {
-            //goto stop;
-            break;
+            others++;
+			break;
         }
         if(input == 'a')
         {
@@ -69,8 +69,7 @@ void number2()
         }
     }
 
-    stop:
-        printf("Number of a's: %d\n", countA);
+        printf("\nNumber of a's: %d\n", countA);
         printf("Number of c's: %d\n", countC);
         printf("Number of otherss: %d", others);
 
