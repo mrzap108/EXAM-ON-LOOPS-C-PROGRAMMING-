@@ -6,6 +6,7 @@ void main()
     //number1();
     //number2();
     number3();
+    number4();
 
 }
 
@@ -91,12 +92,12 @@ void number3()
         printf("Enter integer %d: ", loopVar+1);
         scanf("%d", &theInteger);
         if(theInteger%2 == 0)
-        {
+        {        //-4 =   0  +  -4
             iSumEven = iSumEven + theInteger;
             //sumEven = theInteger;
         }
         else
-        {
+        {		// 12 =  5 + 7
             iSumOdd = iSumOdd + theInteger;
         }
         loopVar++;
@@ -118,4 +119,9 @@ void number3()
     {
         printf("\n\n Both sums are equal");
     }
+}
+
+void number4()
+{
+	//nothing here
 }
